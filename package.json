@@ -1,0 +1,14 @@
+{
+  "name": "chatweb",
+  "version": "1.0.0",
+  "description": "Créer un chat web avec socket.io",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Hecone",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}

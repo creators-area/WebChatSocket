@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    border-radius: 0px 0px 25px 25px;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.body {
+    background-color: #191919;
+    scrollbar-width: none;  
+    height: 100%;
+     display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header h1 {
+    color: white;
+    padding: 15px;
+}
+
+.message {
+    padding: 10px 10px 10px 10px;
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: #444444;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+
+.message p {
+    white-space: normal;
+}
+
+.user {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    white-space: normal;
+}
+
+.user p {
+    white-space: normal;
+}
+
+.message a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    font-size: 10px;
+    opacity: 90%;
+    white-space: normal;
+}
+
+.user a {
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+    font-size: 10px;
+    opacity: 90%;
+    white-space: normal;
+}
+
+
+.footer div{
+    padding: 5px;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .body {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .body .input {
+    flex: 1;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    box-shadow: 2px 2px 20px rgba(5, 5, 5, 0.4);
+    transition: 0.5s;
+}
+
+.footer .body .input:hover { 
+    margin-bottom: 1.5%;
+    transition: 0.5s;
+}
+
+.footer .body .input input {
+    flex: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+    transition: 0.5s;
+    height: 30px;
+    color: rgb(26, 26, 26);
+    background: linear-gradient(43deg, #384cb3 0%, #a742a0 46%, #d6ac5c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer .body .input .inputMessage {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    background-position: center;
+    background-size: contain;
+    font-size: 18px;
+    border: none;
+    border-radius: 100%;
+    background-size: 80%;
+    background: linear-gradient(43deg, #384cb3 0%, #a742a0 46%, #d6ac5c 100%);
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer .body .input .inputScroll {
+    margin-left: 1%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-color: #a742a0;
+    border-radius: 100%;
+    outline: none;
+    transform: rotate(180); 
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #a742a0;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transition: 0.5s;
+}
+
+.footer .body .input .inputScroll:hover {
+    box-shadow: 2px 2px 20px rgba(19, 19, 19, 0.7);
+    background-color: white;
+    color: #a742a0;
+    transition: 0.5s;
+}
+
+div button:hover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 20px rgba(19, 19, 19, 0.7);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        border-radius: 20px 20px 25px 25px;
+        width: 95vw;
+        height: 95vh;
+    }
+
+    div input {
+        position: static;
+    }
+
+    div button {
+        position: static;
+    }
+
+    .footer .body .input {
+        flex: 0.9;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        width: 450px;
+        height: 90vh;
+    }
+}
