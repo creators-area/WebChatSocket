@@ -11,7 +11,7 @@
     <script>
         const socket = io("ws://localhost:8000");
 
-        function newMesasge(message, pseudo, type) {
+        function newMessage(message, pseudo, type) {
             const div = document.createElement("div");
             div.classList.add("message");
             if(type === "user") div.classList.add(type);
@@ -31,12 +31,13 @@
             const pseudoInput = document.getElementById("pseudo");
             
             socket.emit("new message", {message: messageInput.value, pseudo: pseudoInput.value});
-            newMesasge(messageInput.value, pseudoInput.value, "");
+            newMessage(messageInput.value, pseudoInput.value, "");
             messageInput.value = "";
         };
 
         socket.on("new message", (args) => {
-            newMesasge(args.message, args.pseudo, "user")
+            console.log("test")
+            newMessage(args.message, args.pseudo, "user")
         });
      </script>
     <div class="container">
